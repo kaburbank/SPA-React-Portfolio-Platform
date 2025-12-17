@@ -26,6 +26,6 @@ function App() {
       <ProjectList projects={filteredProjects} />
     </div>
   );
-}
+};
 
 export default App;

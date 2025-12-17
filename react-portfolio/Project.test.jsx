@@ -1,8 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../components/App";
 
-// Mock initialProjects if you want to isolate tests (optional)
-// import { initialProjects } from "../data.js";
 
 describe("Project Showcase App", () => {
   test("renders initial projects", () => {
@@ -19,7 +17,7 @@ describe("Project Showcase App", () => {
       target: { value: "New Project" },
     });
     fireEvent.change(screen.getByLabelText(/description/i), {
-      target: { value: "Cool new description" },
+      target: { value: "project description" },
     });
     fireEvent.change(screen.getByLabelText(/image url/i), {
       target: { value: "https://via.placeholder.com/300" },
@@ -29,7 +27,7 @@ describe("Project Showcase App", () => {
 
     // New project should appear
     expect(screen.getByText("New Project")).toBeInTheDocument();
-    expect(screen.getByText("Cool new description")).toBeInTheDocument();
+    expect(screen.getByText("project description")).toBeInTheDocument();
 
     // Check image rendered with correct src
     const img = screen.getByAltText("New Project");
