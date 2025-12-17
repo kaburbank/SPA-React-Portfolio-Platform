@@ -11,7 +11,7 @@
 }
 
 .project-form {
-  background-color: #f8f8f8;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -39,7 +39,7 @@
 }
 
 .project-form button {
-  background-color: #4cafef;
+  background-color: cyan;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -48,7 +48,7 @@
 }
 
 .project-form button:hover {
-  background-color: #379bd4;
+  background-color: #b0d1e4;
 }
 
 .project-list {
