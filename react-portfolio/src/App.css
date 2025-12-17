@@ -40,7 +40,8 @@
 
 .project-form button {
   background-color: cyan;
-  color: white;
+  color: navy;
+  font-style: bold;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
