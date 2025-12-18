@@ -17,6 +17,8 @@ function ProjectForm({ onAddProject }) {
       setTitle("");
       setDescription("");
       setImageUrl("");
+        } else if (!title || !description || !imageUrl) {
+          alert("Please fill in all fields before submitting.");
         };
     };
     
