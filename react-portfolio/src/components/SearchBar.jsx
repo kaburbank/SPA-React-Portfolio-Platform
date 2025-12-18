@@ -1,5 +1,6 @@
 import React from "react";
 
+//Component for search bar to filter projects
 function SearchBar({ searchTerm, onSearch }) {
   return (
     <input
