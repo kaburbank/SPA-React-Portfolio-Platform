@@ -20,6 +20,7 @@
 
 .project-form h2 {
   margin-bottom: 15px;
+  color: navy;
 }
 
 .project-form label {
@@ -39,7 +40,7 @@
 }
 
 .project-form button {
-  background-color: cyan;
+  background-color: lightblue;
   color: navy;
   font-style: bold;
   border: none;
@@ -49,7 +50,7 @@
 }
 
 .project-form button:hover {
-  background-color: #b0d1e4;
+  background-color: #c0e3f7;
 }
 
 .project-list {

@@ -12,13 +12,26 @@ function ProjectForm({ onAddProject }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (title && description && imageUrl) {
-      const newProject = { title, description, imageUrl };
-      onAddProject(newProject);
-      setTitle("");
-      setDescription("");
-      setImageUrl("");
+            const newProject = { title, description, imageUrl };
+            onAddProject(newProject);
+            setTitle("");
+            setDescription("");
+            setImageUrl("");
         } else if (!title || !description || !imageUrl) {
-          alert("Please fill in all fields before submitting.");
+            alert("Please fill in all fields before submitting.");
+        };
+
+        //Input validation function
+        const inputValidation = () => {
+          if (!title.trim() || !description.trim() || !imageUrl.trim()) {
+            return false;
+          }
+            return true;
+        };
+
+        if (!inputValidation()) {
+          alert("All fields are required.");
+          return;
         };
     };
     
