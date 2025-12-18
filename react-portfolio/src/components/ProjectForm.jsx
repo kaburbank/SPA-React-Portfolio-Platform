@@ -1,12 +1,14 @@
 import React from "react";
 import { useState } from "react";
 
+//Component to handle project addition form
 function ProjectForm({ onAddProject }) {
+    //Form state
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [imageUrl, setImageUrl] = useState("");
 
-
+    //Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
         if (title && description && imageUrl) {

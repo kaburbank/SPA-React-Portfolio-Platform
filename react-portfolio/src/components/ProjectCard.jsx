@@ -1,5 +1,6 @@
 import React from "react";
 
+//Component to display individual project details
 function ProjectCard({ project }) {
     console.log(project.imageUrl);
 
