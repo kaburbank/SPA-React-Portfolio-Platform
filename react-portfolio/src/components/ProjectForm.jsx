@@ -48,7 +48,7 @@ function ProjectForm({ onAddProject }) {
             </label>
             <label>
                 Description:
-                <textarea
+                <input
                     type="text"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}

@@ -37,8 +37,7 @@
   font-weight: bold;
 }
 
-.project-form input,
-.project-form textarea {
+.project-form input {
   width: 98%;
   padding: 8px;
   margin-top: 5px;
