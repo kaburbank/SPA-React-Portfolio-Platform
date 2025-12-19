@@ -1,5 +1,5 @@
 .App {
-  font-family: 'IM Fell French Canon Pro';
+  font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
   margin: auto;
   background-image: linear-gradient(to left, #9f9cceff, #b7b6b8ff);
@@ -7,7 +7,6 @@
 
 .App h1 {
   text-align: center;
-  font-family: 'IM Fell French Canon Pro';
   font-size: 70px;
   font-weight: 600;
   color: white;
@@ -22,7 +21,7 @@
   margin-bottom: 30px;
   margin-top: 30px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .project-form h2 {
@@ -93,4 +92,14 @@
   width: 98%;
   padding: 5px;
   opacity: 0.7;
+}
+
+.project-card button {
+  background-color: rgb(222, 220, 248);
+  color: rgb(56, 55, 55);
+  font-style: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }

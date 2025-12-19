@@ -21,12 +21,17 @@ function App() {
     project.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  //Function to delete item with a given id
+  const removeItem = (projectId) => {
+    setProjects(projects.filter(project => project.id !== projectId));
+  };
+
   return (
     <div className="App">
       <h1>React Portfolio Showcase App</h1>
       <ProjectForm onAddProject={handleAddProject}/>
       <SearchBar searchTerm={searchTerm} onSearch={setSearchTerm} />
-      <ProjectList projects={filteredProjects} />
+      <ProjectList projects={filteredProjects} onDeleteProject={removeItem} />
     </div>
   );
 };
