@@ -3,12 +3,12 @@ import { useState } from "react";
 import ProjectList from "./components/ProjectList";
 import ProjectForm from "./components/ProjectForm";
 import SearchBar from "./components/SearchBar";
-import { initialProjects } from "./data/data.js";
+import { previousProjects } from "./data/data.js";
 import "./App.css";
 
 function App() {
   //State to hold projects and search term
-  const [projects, setProjects] = useState(initialProjects);
+  const [projects, setProjects] = useState(previousProjects);
   const [searchTerm, setSearchTerm] = useState("");
 
   //Function to add a new project

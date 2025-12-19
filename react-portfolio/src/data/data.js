@@ -1,4 +1,4 @@
-export const initialProjects = [
+export const previousProjects = [
   {
     id: 1,
     title: "Rocky Mountain Sunset",
